@@ -1,0 +1,53 @@
+.todo {
+  margin: auto;
+  /* height: 100%; */
+  width: 500px;
+  border-radius: 10px;
+  background-color: rgb(243, 200, 81);
+  padding: 20px;
+  text-align: center;
+}
+
+.todo h1 {
+  margin: auto;
+  margin-left: auto;
+  color: rgb(78, 3, 3);
+}
+
+.todo input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 50px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.todo input:hover {
+  background-color: darkgrey;
+}
+
+.todo button {
+  margin-left: 200px;
+}
+
+@media (max-width: 500px) {
+  .todo {
+    height: 90%;
+    width: 80%;
+  }
+
+  .todo input {
+    width: 70%;
+    margin-left: 50px;
+  }
+
+  .todo button {
+    margin-left: 50px;
+  }
+
+  .todo h1 {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,70 @@
+.toDoItem {
+  margin: 20px auto;
+  padding: 5px;
+  background-color: rgb(247, 236, 176);
+  min-width: 80%;
+  min-height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  animation-name: slider;
+  animation-duration: 1s;
+  font-weight: bold;
+  /* flex-wrap: wrap; */
+  word-break: break-all;
+  white-space: pre-wrap;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+}
+
+.toDoItem:hover {
+  background-color: rgb(238, 216, 93);
+}
+
+@keyframes slider {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(90%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.left {
+  margin-left: 0rem;
+  float: left;
+  width: 5%;
+}
+
+.left input {
+  width: 15px;
+  height: 15px;
+  border-color: black;
+}
+
+.middle {
+  margin: 0 auto;
+  width: 60%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  color: rgb(85, 79, 65);
+}
+
+.middle::-webkit-scrollbar {
+  display: none;
+}
+.right {
+  float: right;
+  width: 30%;
+}
+
+@media (max-width: 500px) {
+  .toDoItem {
+    height: 40px;
+  }
+}
