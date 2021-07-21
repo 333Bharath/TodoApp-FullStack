@@ -56,7 +56,7 @@ const ToDo = (props) => {
   };
 
   const markCompleteHandler = useCallback(
-    (id, az) => {
+    (id) => {
       const currentData = toDoData.filter((item) => item.id === id);
       if (currentData[0].isCompleted === false) {
         console.log(id);
